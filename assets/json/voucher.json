@@ -1,0 +1,259 @@
+{
+    "voucherList" : {
+        "A가1형" : {
+            "5" : {
+                "fullPrice" : "688,000",
+                "grant" : "620,000",
+                "actualPrice" : "68,000"
+            },
+            "10" : {
+                "fullPrice" : "1,376,000",
+                "grant" : "1,100,000",
+                "actualPrice" : "276,000"
+            },
+            "15" : {
+                "fullPrice" : "2,064,000",
+                "grant" : "1,444,000",
+                "actualPrice" : "620,000"
+            }
+        },
+        "A통합1형" : {
+            "5" : {
+                "fullPrice" : "688,000",
+                "grant" : "537,000",
+                "actualPrice" : "151,000"
+            },
+            "10" : {
+                "fullPrice" : "1,376,000",
+                "grant" : "949,000",
+                "actualPrice" : "427,000"
+            },
+            "15" : {
+                "fullPrice" : "2,064,000",
+                "grant" : "1,238,000",
+                "actualPrice" : "826,000"
+            }
+        },
+        "A라1형" : {
+            "5" : {
+                "fullPrice" : "688,000",
+                "grant" : "433,000",
+                "actualPrice" : "255,000"
+            },
+            "10" : {
+                "fullPrice" : "1,376,000",
+                "grant" : "729,000",
+                "actualPrice" : "647,000"
+            },
+            "15" : {
+                "fullPrice" : "2,064,000",
+                "grant" : "991,000",
+                "actualPrice" : "1,073,000"
+            }
+        },
+        "A가2형" : {
+            "10" : {
+                "fullPrice" : "1,376,000",
+                "grant" : "1,266,000",
+                "actualPrice" : "110,000"
+            },
+            "15" : {
+                "fullPrice" : "2,064,000",
+                "grant" : "1,692,000",
+                "actualPrice" : "372,000"
+            },
+            "20" : {
+                "fullPrice" : "2,752,000",
+                "grant" : "1,981,000",
+                "actualPrice" : "771,000"
+            }
+        },
+        "A통합2형" : {
+            "10" : {
+                "fullPrice" : "1,376,000",
+                "grant" : "1,100,000",
+                "actualPrice" : "276,000"
+            },
+            "15" : {
+                "fullPrice" : "2,064,000",
+                "grant" : "1,444,000",
+                "actualPrice" : "620,000"
+            },
+            "20" : {
+                "fullPrice" : "2,752,000",
+                "grant" : "1,679,000",
+                "actualPrice" : "1,073,000"
+            }
+        },
+        "A라2형" : {
+            "10" : {
+                "fullPrice" : "1,376,000",
+                "grant" : "894,000",
+                "actualPrice" : "482,000"
+            },
+            "15" : {
+                "fullPrice" : "2,064,000",
+                "grant" : "1,136,000",
+                "actualPrice" : "928,000"
+            },
+            "20" : {
+                "fullPrice" : "2,752,000",
+                "grant" : "1,376,000",
+                "actualPrice" : "1,376,000"
+            }
+        },
+        "A가3형" : {
+            "10" : {
+                "fullPrice" : "1,376,000",
+                "grant" : "1,293,000",
+                "actualPrice" : "83,000"
+            },
+            "15" : {
+                "fullPrice" : "2,064,000",
+                "grant" : "1,733,000",
+                "actualPrice" : "331,000"
+            },
+            "20" : {
+                "fullPrice" : "2,752,000",
+                "grant" : "2,036,000",
+                "actualPrice" : "716,000"
+            }
+        },
+        "A통합3형" : {
+            "10" : {
+                "fullPrice" : "1,376,000",
+                "grant" : "1,128,000",
+                "actualPrice" : "248,000"
+            },
+            "15" : {
+                "fullPrice" : "2,064,000",
+                "grant" : "1,465,000",
+                "actualPrice" : "599,000"
+            },
+            "20" : {
+                "fullPrice" : "2,752,000",
+                "grant" : "1,707,000",
+                "actualPrice" : "1,045,000"
+            }
+        },
+        "A라3형" : {
+            "10" : {
+                "fullPrice" : "1,376,000",
+                "grant" : "922,000",
+                "actualPrice" : "454,000"
+            },
+            "15" : {
+                "fullPrice" : "2,064,000",
+                "grant" : "1,176,000",
+                "actualPrice" : "888,000"
+            },
+            "20" : {
+                "fullPrice" : "2,752,000",
+                "grant" : "1,431,000",
+                "actualPrice" : "1,321,000"
+            }
+        },
+        "B가1형" : {
+            "10" : {
+                "fullPrice" : "1,720,000",
+                "grant" : "1,651,000",
+                "actualPrice" : "69,000"
+            },
+            "15" : {
+                "fullPrice" : "2,580,000",
+                "grant" : "2,219,000",
+                "actualPrice" : "361,000"
+            },
+            "20" : {
+                "fullPrice" : "3,440,000",
+                "grant" : "2,614,000",
+                "actualPrice" : "826,000"
+            }
+        },
+        "B통합1형" : {
+            "10" : {
+                "fullPrice" : "1,720,000",
+                "grant" : "1,479,000",
+                "actualPrice" : "241,000"
+            },
+            "15" : {
+                "fullPrice" : "2,580,000",
+                "grant" : "1,935,000",
+                "actualPrice" : "645,000"
+            },
+            "20" : {
+                "fullPrice" : "3,440,000",
+                "grant" : "2,305,000",
+                "actualPrice" : "1,135,000"
+            }
+        },
+        "B라1형" : {
+            "10" : {
+                "fullPrice" : "1,720,000",
+                "grant" : "1,204,000",
+                "actualPrice" : "516,000"
+            },
+            "15" : {
+                "fullPrice" : "2,580,000",
+                "grant" : "1,523,000",
+                "actualPrice" : "1,057,000"
+            },
+            "20" : {
+                "fullPrice" : "3,440,000",
+                "grant" : "1,857,000",
+                "actualPrice" : "1,583,000"
+            }
+        },
+        "B가2형" : {
+            "10" : {
+                "fullPrice" : "2,656,000",
+                "grant" : "2,441,000",
+                "actualPrice" : "215,000"
+            },
+            "15" : {
+                "fullPrice" : "3,984,000",
+                "grant" : "3,254,000",
+                "actualPrice" : "730,000"
+            },
+            "20" : {
+                "fullPrice" : "5,312,000",
+                "grant" : "4,019,000",
+                "actualPrice" : "1,293,000"
+            }
+        },
+        "B통합2형" : {
+            "10" : {
+                "fullPrice" : "2,656,000",
+                "grant" : "2,216,000",
+                "actualPrice" : "440,000"
+            },
+            "15" : {
+                "fullPrice" : "3,984,000",
+                "grant" : "2,967,000",
+                "actualPrice" : "1,017,000"
+            },
+            "20" : {
+                "fullPrice" : "5,312,000",
+                "grant" : "3,675,000",
+                "actualPrice" : "1,637,000"
+            }
+        },
+        "B라2형" : {
+            "10" : {
+                "fullPrice" : "2,656,000",
+                "grant" : "1,880,000",
+                "actualPrice" : "776,000"
+            },
+            "15" : {
+                "fullPrice" : "3,984,000",
+                "grant" : "2,537,000",
+                "actualPrice" : "1,447,000"
+            },
+            "20" : {
+                "fullPrice" : "5,312,000",
+                "grant" : "3,159,000",
+                "actualPrice" : "2,153,000"
+            }
+        }
+    }
+}
