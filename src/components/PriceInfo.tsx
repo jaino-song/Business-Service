@@ -1,19 +1,20 @@
 import { useState, useEffect } from 'react'
 import useStore from '../store/store'
+import dataChecker from '../store/validator';
 
 export default function PriceInfo() {
     const { bankAccountList, voucherList } = useStore();
-    const [name, setName] = useState('');
-    const [area, setArea] = useState('');
-    const [weeks, setWeeks] = useState(0);
-    const [days, setDays] = useState(0);
-    const [type, setType] = useState('');
-    const [fullPrice, setFullPrice] = useState('');
-    const [grant, setGrant] = useState('');
-    const [actualPrice, setActualPrice] = useState('');
-    const [input, setInput] = useState('');
-    const [showInput, setShowInput] = useState(false);
-    const [showCopyButton, setShowCopyButton] = useState(false);
+    const [name, setName] = useState('000'); // 산모 이름
+    const [area, setArea] = useState(''); // 지역 선택
+    const [weeks, setWeeks] = useState(0); // 서비스 기간(주)
+    const [days, setDays] = useState(0); // 서비스 기간(일)
+    const [type, setType] = useState(''); // 바우처 유형
+    const [fullPrice, setFullPrice] = useState(''); // 기본 서비스 금액
+    const [grant, setGrant] = useState(''); // 정부 지원금액
+    const [actualPrice, setActualPrice] = useState(''); // 본인 부담금
+    const [input, setInput] = useState(''); // 생성된 문자
+    const [showInput, setShowInput] = useState(false); // 문자창 보이기 여부
+    const [showCopyButton, setShowCopyButton] = useState(false); // 복사 버튼 보이기 여부
 
     // Update message when type or days change
     useEffect(() => {
@@ -24,16 +25,6 @@ export default function PriceInfo() {
             setActualPrice(actualPrice || '');
         }
     }, [type, days, voucherList]);
-
-    const dataChecker = () => {
-        if (days === 0) {
-            alert('서비스 기간을 입력해 주세요');
-            throw new Error('서비스 기간을 입력해 주세요');
-        } else if (name === '') {
-            alert('산모 이름을 입력해 주세요');
-            throw new Error('산모 이름을 입력해 주세요');
-        }
-    };
 
     // Generate the price message based on form inputs
     const generatePriceMsg = () => {
@@ -73,7 +64,7 @@ ${bankAccountList.find((account) => account.area === area)?.bankName} ${bankAcco
 
     const createText = () => {
         try {
-            dataChecker();
+            dataChecker(days, area, name, type, fullPrice, grant, actualPrice, weeks);
         }
         catch {
             return;
@@ -97,7 +88,7 @@ ${bankAccountList.find((account) => account.area === area)?.bankName} ${bankAcco
         return (
             <div>
                 <h2 className='component-title'>금액 및 계좌번호</h2>
-                <p>해당 항목들을 모두 작성 및 선택 후에 하단에 있는 문자 생성 버튼을 클릭해 주세요</p>
+                <p className='component-subtitle'>해당 항목들을 모두 작성 및 선택 후에 하단에 있는 문자 생성 버튼을 클릭해 주세요</p>
 
                 <form>
                     <label>
@@ -163,8 +154,11 @@ ${bankAccountList.find((account) => account.area === area)?.bankName} ${bankAcco
                     <label>
                         지역 선택
                         <select defaultValue='' onChange={(e) => setArea(e.target.value)}>
-                            <option value='' disabled>선택하세요</option>
-                            {bankAccountList.map((account, index) => (
+                            {days ? <option value='' disabled>지역을 선택하세요</option>
+                                : 
+                                <option value='' disabled>서비스 기간을 선택하세요</option>
+                            }
+                            { days && bankAccountList.map((account, index) => (
                                 <option key={index} value={account.area}>{account.area}</option>
                             ))}
                         </select>

@@ -10,8 +10,9 @@ body {
 main {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  align-items: start;
+  min-height: 100vh;
+  margin-top: 100px;
 }
 
 header {
@@ -46,4 +47,11 @@ header nav .nav-button {
 .component-title {
   text-align: center;
   margin: 0;
+  font-size: 30px;
+}
+
+.component-subtitle {
+  text-align: center;
+  margin: 20px 20px 50px 20px;
+  font-size: 20px;
 }/*# sourceMappingURL=App.css.map */
